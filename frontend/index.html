@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Labubu Animation</title>
+</head>
+<body>
+
+  <header>
+    <h1>Labubu Animation</h1>
+  </header>
+
+  <section id="about">
+    <h2>О нас</h2>
+    <p>Мы предлагаем уникальное анимационное шоу с Labubu для детских праздников и мероприятий. Яркий костюм, весёлые развлечения и море позитива!</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery-container">
+        <div class="gallery" id="galleryTrack">
+            <img src="images/placeholder-4.jpg" alt="Labubu4">
+            <img src="images/placeholder-5.jpg" alt="Labubu5">
+
+            <img src="images/placeholder-1.jpg" alt="Labubu1">
+            <img src="images/placeholder-2.jpg" alt="Labubu2">
+            <img src="images/placeholder-3.jpg" alt="Labubu3">
+            <img src="images/placeholder-4.jpg" alt="Labubu4">
+            <img src="images/placeholder-5.jpg" alt="Labubu5">
+
+            <img src="images/placeholder-1.jpg" alt="Labubu1">
+            <img src="images/placeholder-2.jpg" alt="Labubu2">
+        </div>
+        <button class="gallery-btn prev" onclick="prevSlide('galleryTrack')">‹</button>
+        <button class="gallery-btn next" onclick="nextSlide('galleryTrack')">›</button>
+    </div>
+</section>
+
+
+    <section id="reviews">
+        <h2>Отзывы</h2>
+        <div class="reviews-container">
+            <div class="reviews" id="reviewsTrack">
+                <div class="review">"Все очень понравилось! Спасибо большое ❤️"— Ксения</div>
+                <div class="review">"Спасибо огромное ребятам за проведенное мероприятие! И взрослые, и дети остались в восторге. Мы заказывали на 2 часа, за большой заказ сделали скидку. Большое спасибо 😁😁😁" — Олег</div>
+
+                <div class="review">"Потрясающие ребята! Было ощущение, что рады празднованию не меньше приглашенных гостей☺️ Идеально вписались и выполнили свою работу на сто процентов. Костюм очень качественный и правдоподобный."— Самира Гед</div>
+                <div class="review">"Все очень понравилось, взяли срочный заказ, именинница счастлива🙏🏼🙏🏼"— Аня</div>
+                <div class="review">"Всё супер! Ребенок доволен, Лабубу класс 👍 Всем рекомендую."— Виталий</div>
+                <div class="review">"Все очень понравилось! Спасибо большое ❤️"— Ксения</div>
+                <div class="review">"Спасибо огромное ребятам за проведенное мероприятие! И взрослые, и дети остались в восторге. Мы заказывали на 2 часа, за большой заказ сделали скидку. Большое спасибо 😁😁😁" — Олег</div>
+
+                <div class="review">"Потрясающие ребята! Было ощущение, что рады празднованию не меньше приглашенных гостей☺️ Идеально вписались и выполнили свою работу на сто процентов. Костюм очень качественный и правдоподобный."— Самира Гед</div>
+                <div class="review">"Все очень понравилось, взяли срочный заказ, именинница счастлива🙏🏼🙏🏼"— Аня</div>
+            </div>
+            <button class="gallery-btn prev" onclick="prevSlide('reviewsTrack')">‹</button>
+            <button class="gallery-btn next" onclick="nextSlide('reviewsTrack')">›</button>
+        </div>
+    </section>
+
+  <section id="order">
+    <h2>Заказать Labubu</h2>
+    <form id="orderForm">
+      <input type="text" name="name" placeholder="Имя">
+      <input type="text" name="phone" placeholder="Телефон / Telegram / Whatsapp (обязательное поле)" required>
+      <input type="text" name="date" placeholder="Время">
+      <input type="text" name="time" placeholder="Дата">
+      <input name="comment" placeholder="Комментарий">
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <footer>
+    <h2>Пишите нам!</h2>
+    <p>Связь с нами: <a href="https://t.me/Moscow_labuba" target="_blank">Telegram</a> / <a href="https://www.avito.ru/moskva/predlozheniya_uslug/pozdravlenie_ot_labubu_7541824680" target="_blank">Avito</a></p>
+    <p>Больше нас тут: <a href="https://www.tiktok.com/@labubu_moscow36">TikTok</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

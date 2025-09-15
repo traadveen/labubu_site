@@ -1,0 +1,12 @@
+# Секретные файлы и логи
+.env
+orders.csv
+nohup.out
+
+# Скомпилированные файлы
+__pycache__
+.pyc
+
+# Конфигурация сервера
+nginx_labubu.conf
+.service

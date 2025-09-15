@@ -1,0 +1,175 @@
+/* Общие стили для всего сайта */
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background-color: #F7EFE6;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Хедер */
+header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #7A4B33;
+  color: #fff;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* Секции */
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+section h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #7A4B33;
+}
+
+.about-img {
+  display: block;
+  max-width: 100%;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+/* Галерея */
+.gallery-container {
+  position: relative;
+  max-width: 900px;
+  margin: auto;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 0 60px;
+}
+
+.gallery {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery img {
+  min-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+/* Отзывы */
+.reviews-container {
+  position: relative;
+  max-width: 700px;
+  margin: 20px auto;
+  overflow: hidden;
+  background: #fdfaf8;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px 60px;
+}
+
+.reviews {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.review {
+  min-width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #3a2c20;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* Общие стили для кнопок-стрелок */
+.gallery-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #6b4226;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+  z-index: 2;
+}
+
+.gallery-btn:hover {
+  background: #4a2e1a;
+}
+
+.gallery-btn.prev {
+  left: 20px;
+}
+
+.gallery-btn.next {
+  right: 20px;
+}
+
+/* Форма */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input, form textarea, form button {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+form button {
+  background-color: #7A4B33;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+form button:hover {
+  background-color: #5a3625;
+}
+
+/* Контакты */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #7A4B33;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* Медиазапрос для адаптивности */
+@media (max-width: 768px) {
+    .gallery-container,
+    .reviews-container {
+        padding: 0 10px;
+    }
+
+    .gallery-btn.prev {
+        left: 0;
+    }
+
+    .gallery-btn.next {
+        right: 0;
+    }
+}
