@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             try {
-                const response = await fetch("https://moscowlabubu.ru/api/order", {
+                const response = await fetch("/api/order", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify(formData),
